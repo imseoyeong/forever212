@@ -2,10 +2,11 @@
 
 @font-face {
   font-family: 'BagelFatOne-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+  src: url('../font/BagelFatOne-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
+
 
 html,
 body,
