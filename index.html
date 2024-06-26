@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="js/wow.min.js"></script>
+
+    <title>2024 포여상부에버</title>
+  </head>
+  <body>
+    <section id="forever">
+      <div class="title_wrap wow fadeInDown" data-wow-duration="1s">
+        <h4 class="title"><img src="./img/tit_event.png" alt="" />포여상부에버</h4>
+        <p class="sub_title">2024써머페스티발<img src="./img/ic_summer.svg" alt="" /></p>
+      </div>
+      <!-- //title_wrap -->
+
+      <div class="poster wow fadeInDown" data-wow-duration="2.5s">
+        <img src="./img/poster.png" alt="" />
+        <button id="confettiButton">기대 되는만큼 클릭 갈겨!👊🏻</button>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <script>
+      // JSConfetti 인스턴스를 생성합니다.
+      const jsConfetti = new JSConfetti();
+
+      // 색종이 효과를 주기적으로 실행하는 함수
+      const launchAutoConfetti = () => {
+        jsConfetti.addConfetti({
+          confettiColors: ["#ff0a54", "#ff477e", "#ff7096", "#ff85a1", "#fbb1bd", "#f9bec7"],
+          confettiRadius: 5,
+          confettiNumber: 800,
+        });
+      };
+
+      // 페이지 로드 후 즉시 색종이 효과를 한 번 실행
+      launchAutoConfetti();
+
+      // 페이지 로드 후 2.5초마다 색종이 효과를 주기적으로 실행
+      let autoConfettiInterval = setInterval(launchAutoConfetti, 2500);
+
+      // 5초 후에 자동으로 색종이 효과 멈추기
+      setTimeout(() => {
+        clearInterval(autoConfettiInterval);
+      }, 5000);
+
+      // 버튼 클릭 시 이모지 효과를 실행하는 함수
+      const launchEmojiConfetti = () => {
+        jsConfetti.addConfetti({
+          emojis: ["🔥", "💖", "🍺", "🍖", "🥩", "🧊", "🤿"],
+          emojiSize: 85,
+          confettiNumber: 40,
+        });
+      };
+
+      // 버튼 클릭 이벤트 핸들러를 정의합니다.
+      document.getElementById("confettiButton").addEventListener("click", launchEmojiConfetti);
+    </script>
+
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
