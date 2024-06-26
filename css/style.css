@@ -45,10 +45,14 @@
 }
 
 #forever #confettiButton {
-  font-family: "Bagel Fat One";
+  width: 100%;
+  max-width: 29rem;
   display: block;
-  text-align: center;
   margin: 0 auto;
+}
+
+#forever #confettiButton img {
+  width: 100%;
 }
 
 #forever .us {
