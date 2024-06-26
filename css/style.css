@@ -1,3 +1,8 @@
+.inner {
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
 #forever {
   max-width: 500px;
   width: 100%;
@@ -8,10 +13,10 @@
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-bottom: 14rem;
+  padding-bottom: 7rem;
 }
 
-#forever .title {
+#forever>.title {
   border-radius: 0px 0px 5rem 5rem;
   background-color: #fff;
   box-shadow: 0px 6px 26px 0px rgba(0, 0, 0, 0.15);
@@ -25,8 +30,7 @@
   z-index: 9;
 }
 
-
-#forever .title img {
+#forever>.title img {
   width: 100%;
 }
 
@@ -47,9 +51,62 @@
   margin: 0 auto;
 }
 
-@media (max-width: 375px) {
+#forever .us {
+  background: #F8F8F8;
+  border-radius: 2rem;
+  padding: 1.5rem 1.5rem 2rem;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
 
-  #forever #confettiButton {
-    font-size: 2.2rem;
-  }
+#forever .us .title {
+  display: block;
+  width: 27.5rem;
+  margin: 0 auto;
+}
+
+#forever .us .us_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#forever .us .us_list li {
+  width: calc((100% - 1.5rem) / 2);
+  margin-top: 1.5rem;
+}
+
+#forever .us .us_list .img {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+#forever .us .us_list .img:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#forever .us .us_list .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#forever .us .us_list li span {
+  background: #fff;
+  position: absolute;
+  font-weight: 500;
+  padding: 0.2rem 0.7rem;
+  bottom: 0%;
+  left: 0;
+}
+
+#forever .us .us_list li p {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #888;
+  font-size: 1.6rem;
 }
