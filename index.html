@@ -110,8 +110,8 @@
       </div>
       <!-- //poster -->
 
-      <div class="inner">
-        <div class="us wow fadeIn" data-wow-delay="1s">
+      <div class="inner wow fadeIn" data-wow-delay="1s">
+        <div class="us">
           <img src="./img/our_summer.png" alt="" class="title" />
           <ul class="us_list">
             <li>
@@ -144,9 +144,13 @@
             </li>
           </ul>
         </div>
-      </div>
+        <!-- //us -->
 
-      <button id="confettiButton"><img src="./img/click.png" alt="" /></button>
+        <button id="confettiButton">
+          <img src="./img/click.png" alt="" />
+        </button>
+      </div>
+      <!-- //inner -->
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
@@ -198,7 +202,9 @@
     </script>
 
     <script>
-      new WOW().init();
+      new WOW({
+        offset: -100,
+      }).init();
     </script>
   </body>
 </html>
