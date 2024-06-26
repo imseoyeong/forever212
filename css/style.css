@@ -11,7 +11,7 @@
   padding-bottom: 7rem;
 }
 
-#forever .title_wrap {
+#forever .title {
   border-radius: 0px 0px 5rem 5rem;
   background-color: #fff;
   box-shadow: 0px 6px 26px 0px rgba(0, 0, 0, 0.15);
@@ -25,36 +25,9 @@
   z-index: 9;
 }
 
-#forever .title_wrap .title {
-  color: #ff0362;
-  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
-  font-size: 6.4rem;
-  width: fit-content;
-  margin: 0 auto;
-  position: relative;
-}
 
-#forever .title_wrap .title img {
-  position: absolute;
-  top: -0.3rem;
-  left: -1.2rem;
-  width: 2.4rem;
-}
-
-#forever .title_wrap .sub_title {
-  color: #b9b9b9;
-  text-align: center;
-  text-shadow: -1.5px 0 #4a001c, 0 1.5px #4a001c, 1.5px 0 #4a001c, 0 -1.5px #4a001c;
-  font-size: 2.2rem;
-  letter-spacing: 1.2rem;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#forever .title_wrap .sub_title img {
-  width: 3rem;
+#forever .title img {
+  width: 100%;
 }
 
 #forever .poster {
@@ -72,26 +45,9 @@
   display: block;
   text-align: center;
   margin: 0 auto;
-  background: #fff;
-  border: 0.2rem solid #ff0362;
-  color: #ff0362;
-  font-size: 2.4rem;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
 }
 
 @media (max-width: 375px) {
-  #forever .title_wrap .title {
-    font-size: 5.4rem;
-  }
-
-  #forever .title_wrap .sub_title {
-    font-size: 1.6rem;
-  }
-
-  #forever .title_wrap .sub_title img {
-    width: 2.6rem;
-  }
 
   #forever #confettiButton {
     font-size: 2.2rem;
