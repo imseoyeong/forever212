@@ -132,42 +132,6 @@
       // 버튼 클릭 이벤트 핸들러를 정의합니다.
       document.getElementById("confettiButton").addEventListener("click", launchEmojiConfetti);
 
-      // 오른쪽 클릭 방지
-      document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-      });
-
-      // 드래그 방지
-      document.addEventListener("dragstart", function (e) {
-        e.preventDefault();
-      });
-
-      // 이미지 드래그 방지
-      document.addEventListener("mousedown", function (e) {
-        if (e.target.tagName === "IMG") {
-          e.preventDefault();
-        }
-      });
-
-      // 모바일 터치 및 홀드 방지
-      document.addEventListener("touchstart", function (e) {
-        if (e.target.tagName === "IMG") {
-          e.preventDefault();
-        }
-      });
-
-      document.addEventListener("touchmove", function (e) {
-        if (e.target.tagName === "IMG") {
-          e.preventDefault();
-        }
-      });
-
-      document.addEventListener("touchend", function (e) {
-        if (e.target.tagName === "IMG") {
-          e.preventDefault();
-        }
-      });
-
       // wow 애니메이션
       new WOW({
         offset: -100,
